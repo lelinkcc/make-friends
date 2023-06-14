@@ -1,0 +1,7 @@
+@font-face{
+    font-family: 'popins';
+    font-style: normal;
+    font-weight: normal;
+
+    src:url(./file/poppins字体/Poppins-Regular.ttf)format("woff2");
+}

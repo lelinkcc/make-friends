@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "SiYuanHeiTi";
+  src: url(./file/SourceHanSansSC-ExtraLight-2.otf) format("openType");
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SiYuanHeiTi";
+  src: url(./file/SourceHanSansSC-Light-2.otf) format("openType");
+  font-weight: lighter;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SiYuanHeiTi";
+  src: url(./file/SourceHanSansSC-Normal-2.otf) format("openType");
+  font-display: swap;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SiYuanHeiTi";
+  src: url(./file/SourceHanSansSC-Medium-2.otf) format("openType");
+  font-weight: medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SiYuanHeiTi";
+  src: url(./file/SourceHanSansSC-Bold-2.otf) format("openType");
+  font-weight: bold;
+  font-display: swap;
+}
