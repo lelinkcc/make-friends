@@ -45,7 +45,9 @@
                   <div
                     v-if="formData.selected !== 'a'"
                     class="imgs"
-                    :style="{ border: error ? '1px solid #F56C6C' : '' }"
+                    :style="{
+                      border: error ? '1px solid #F56C6C' : ' ',
+                    }"
                   >
                     <div class="content">
                       <img src="@/assets/5.png" alt="" class="left" />
@@ -63,7 +65,13 @@
                     class="imgs"
                     style="background-color: #c584b5"
                   >
-                    <div class="content" style="background-color: #c584b5">
+                    <div
+                      class="content"
+                      style="
+                        background-color: #c584b5;
+                        border: 1px solid #ab609d;
+                      "
+                    >
                       <img src="@/assets/6.png" alt="" class="left" />
                       <div class="texts" style="color: #ffffff">male</div>
                       <img
@@ -99,7 +107,9 @@
                   <div
                     v-if="formData.selected !== 'b'"
                     class="imgs"
-                    :style="{ border: error ? '1px solid #F56C6C' : '' }"
+                    :style="{
+                      border: error ? '1px solid #F56C6C' : '',
+                    }"
                   >
                     <div class="content">
                       <img src="@/assets/5.png" alt="" class="left" />
@@ -112,7 +122,13 @@
                     class="imgs"
                     style="background-color: #c584b5"
                   >
-                    <div class="content" style="background-color: #c584b5">
+                    <div
+                      class="content"
+                      style="
+                        background-color: #c584b5;
+                        border: 1px solid #ab609d;
+                      "
+                    >
                       <img src="@/assets/6.png" alt="" class="left" />
                       <div class="texts" style="color: #ffffff">female</div>
                       <img src="@/assets/1.png" alt="" class="right" />
@@ -157,7 +173,7 @@
                   <el-option
                     v-for="item in country"
                     :key="item.value"
-                    :label="item.label"
+                    :label="item.value"
                     :value="item.value"
                   >
                   </el-option>
@@ -256,75 +272,75 @@ export default {
         ],
       },
       options: [
-        { value: "18", label: "18岁" },
-        { value: "19", label: "19岁" },
-        { value: "20", label: "20岁" },
-        { value: "21", label: "21岁" },
-        { value: "22", label: "22岁" },
-        { value: "23", label: "23岁" },
-        { value: "24", label: "24岁" },
-        { value: "25", label: "25岁" },
-        { value: "26", label: "26岁" },
-        { value: "27", label: "27岁" },
-        { value: "28", label: "28岁" },
-        { value: "29", label: "29岁" },
-        { value: "30", label: "30岁" },
-        { value: "31", label: "31岁" },
-        { value: "32", label: "32岁" },
-        { value: "33", label: "33岁" },
-        { value: "34", label: "34岁" },
-        { value: "35", label: "35岁" },
-        { value: "36", label: "36岁" },
-        { value: "37", label: "37岁" },
-        { value: "38", label: "38岁" },
-        { value: "39", label: "39岁" },
-        { value: "40", label: "40岁" },
-        { value: "41", label: "41岁" },
-        { value: "42", label: "42岁" },
-        { value: "43", label: "43岁" },
-        { value: "44", label: "44岁" },
-        { value: "45", label: "45岁" },
-        { value: "46", label: "46岁" },
-        { value: "47", label: "47岁" },
-        { value: "48", label: "48岁" },
-        { value: "49", label: "49岁" },
-        { value: "50", label: "50岁" },
-        { value: "51", label: "51岁" },
-        { value: "52", label: "52岁" },
-        { value: "53", label: "53岁" },
-        { value: "54", label: "54岁" },
-        { value: "55", label: "55岁" },
-        { value: "56", label: "56岁" },
-        { value: "57", label: "57岁" },
-        { value: "58", label: "58岁" },
-        { value: "59", label: "59岁" },
-        { value: "60", label: "60岁" },
-        { value: "61", label: "61岁" },
-        { value: "62", label: "62岁" },
-        { value: "63", label: "63岁" },
-        { value: "64", label: "64岁" },
-        { value: "65", label: "65岁" },
-        { value: "66", label: "66岁" },
-        { value: "67", label: "67岁" },
-        { value: "68", label: "68岁" },
-        { value: "69", label: "69岁" },
-        { value: "70", label: "70岁" },
+        { value: "18", label: "18" },
+        { value: "19", label: "19" },
+        { value: "20", label: "20" },
+        { value: "21", label: "21" },
+        { value: "22", label: "22" },
+        { value: "23", label: "23" },
+        { value: "24", label: "24" },
+        { value: "25", label: "25" },
+        { value: "26", label: "26" },
+        { value: "27", label: "27" },
+        { value: "28", label: "28" },
+        { value: "29", label: "29" },
+        { value: "30", label: "30" },
+        { value: "31", label: "31" },
+        { value: "32", label: "32" },
+        { value: "33", label: "33" },
+        { value: "34", label: "34" },
+        { value: "35", label: "35" },
+        { value: "36", label: "36" },
+        { value: "37", label: "37" },
+        { value: "38", label: "38" },
+        { value: "39", label: "39" },
+        { value: "40", label: "40" },
+        { value: "41", label: "41" },
+        { value: "42", label: "42" },
+        { value: "43", label: "43" },
+        { value: "44", label: "44" },
+        { value: "45", label: "45" },
+        { value: "46", label: "46" },
+        { value: "47", label: "47" },
+        { value: "48", label: "48" },
+        { value: "49", label: "49" },
+        { value: "50", label: "50" },
+        { value: "51", label: "51" },
+        { value: "52", label: "52" },
+        { value: "53", label: "53" },
+        { value: "54", label: "54" },
+        { value: "55", label: "55" },
+        { value: "56", label: "56" },
+        { value: "57", label: "57" },
+        { value: "58", label: "58" },
+        { value: "59", label: "59" },
+        { value: "60", label: "60" },
+        { value: "61", label: "61" },
+        { value: "62", label: "62" },
+        { value: "63", label: "63" },
+        { value: "64", label: "64" },
+        { value: "65", label: "65" },
+        { value: "66", label: "66" },
+        { value: "67", label: "67" },
+        { value: "68", label: "68" },
+        { value: "69", label: "69" },
+        { value: "70", label: "70" },
 
-        { value: "71", label: "71岁" },
-        { value: "72", label: "72岁" },
-        { value: "73", label: "73岁" },
-        { value: "74", label: "74岁" },
-        { value: "75", label: "75岁" },
-        { value: "76", label: "76岁" },
-        { value: "77", label: "77岁" },
-        { value: "78", label: "78岁" },
-        { value: "79", label: "79岁" },
-        { value: "80", label: "80岁" },
+        { value: "71", label: "71" },
+        { value: "72", label: "72" },
+        { value: "73", label: "73" },
+        { value: "74", label: "74" },
+        { value: "75", label: "75" },
+        { value: "76", label: "76" },
+        { value: "77", label: "77" },
+        { value: "78", label: "78" },
+        { value: "79", label: "79" },
+        { value: "80", label: "80" },
       ],
       country: [
-        { value: "Angola", label: "安哥拉" },
-        { value: "Afghanistan", label: "阿富汗" },
-        { value: "Albania", label: "阿尔巴尼亚" },
+        { value: "Angola", label: "Angola" },
+        { value: "Afghanistan", label: "Afghanistan" },
+        { value: "Albania", label: "Albania" },
         { value: "Algeria", label: "阿尔及利亚" },
         { value: "Andorra", label: "安道尔共和国" },
         { value: "Anguilla", label: "安圭拉岛" },
@@ -546,7 +562,11 @@ export default {
           form({ ...data }).then((res) => {
             console.log(res);
             if (res.data.code == 200) {
-              window.location.href = "https://www.baidu.com";
+              // window.location.href = "https://www.baidu.com";
+              this.$message({
+                message: "submitted successfully",
+                type: "success",
+              });
             } else {
               this.$message({
                 message: res.data.msg,
@@ -615,7 +635,7 @@ export default {
             font-size: 14px;
             text-align: right;
 
-            color: #ffffff;
+            color: #c584b5;
           }
           .button {
             width: 214px;
@@ -716,7 +736,7 @@ export default {
               .el-input {
                 margin-top: 12px;
                 background: #fbfafc;
-                border: 1px solid #979797;
+
                 border-radius: 8px;
                 height: 46px;
                 margin-top: 0;
@@ -725,6 +745,7 @@ export default {
                 }
                 .el-input__inner {
                   height: 46px;
+                  border-radius: 8px;
                 }
                 ::v-deep .is-error {
                   border: 1px solid blue !important;
@@ -743,10 +764,15 @@ export default {
 
               .el-textarea {
                 height: 138px;
+                border-radius: 8px;
                 margin-top: 10px;
                 .el-textarea__inner {
                   height: 100%;
                 }
+              }
+              ::v-deep .el-textarea::placeholder {
+                color: blue !important;
+                font-weight: bold;
               }
             }
           }

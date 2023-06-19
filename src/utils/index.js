@@ -2,7 +2,7 @@ import axios from "axios";
 
 const http = axios.create({
     // 通用请求的地址前缀
-    baseURL: '',
+    baseURL: 'api',
     changeOrigin:true,
 
     // 超时时间
